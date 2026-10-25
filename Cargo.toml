@@ -2,5 +2,21 @@
 name = "resigrok"
 version = "0.1.0"
 edition = "2024"
+description = "A Rust rewrite of libsigrok"
+authors = ["Shishir Dey <shishirdey241097@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/shishir-dey/resigrok"
+homepage = "https://github.com/shishir-dey/resigrok"
+documentation = "https://docs.rs/resigrok"
+readme = "README.md"
+keywords = ["sigrok", "logic-analyzer", "oscilloscope", "multimeter", "measurement"]
+categories = ["hardware-support", "science"]
 
 [dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.8.2", features = ["html_reports"] }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
